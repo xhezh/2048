@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8075514304437592094}
   - component: {fileID: 8191029926225024022}
   - component: {fileID: 1601388649307210484}
+  - component: {fileID: 3501215437006107048}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -74,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288059299
-  m_fontColor: {r: 0.6392157, g: 0.5921569, b: 0.5882353, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -134,6 +135,22 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3501215437006107048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997229100511322242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1734ca6e360a448c6a7f38376c85f405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 1601388649307210484}
+  maxFontSize: 100
+  minFontSize: 30
+  maxDigits: 6
 --- !u!1 &3100608313136134756
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,5 +242,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valueText: {fileID: 1601388649307210484}
   backgroundImage: {fileID: 4149715807971396247}
-  tile2Sprite: {fileID: 21300000, guid: 8f401592746164e03a129ca936385431, type: 3}
-  tile4Sprite: {fileID: 21300000, guid: e88ab44ba4eb946f4b4115885e6a5269, type: 3}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  adaptiveFontSize: {fileID: 3501215437006107048}

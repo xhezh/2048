@@ -6,11 +6,13 @@ public class CellView : MonoBehaviour {
     public TMP_Text valueText;
     public Image backgroundImage;
 
-    public Sprite tile2Sprite;
-    public Sprite tile4Sprite; 
-
     private Cell cell;
     private int gridSize;
+
+    public Color startColor = Color.white;
+    public Color endColor = Color.red;
+
+    public AdaptiveFontSize adaptiveFontSize;
 
     /// <summary>
     /// Метод Init, принимающий объект класса Cell, подписывающийся на его события изменения позиции и значения двумя методами UpdateValue и UpdatePosition
@@ -32,14 +34,14 @@ public class CellView : MonoBehaviour {
     /// </summary>
     /// <param name="newValue"></param>
     private void UpdateValue(int newValue) {
-        valueText.text = newValue.ToString();
+        adaptiveFontSize.UpdateNumber(newValue);
+        // Вычисляем коэффициент: чем больше newValue, тем больше значение коэффициента
+        // Например, для newValue == 2 -> t = 0, для newValue == 2048 -> t = 1
+        // Подберите нормировку в зависимости от диапазона значений
+        float t = Mathf.Clamp01((Mathf.Log(newValue, 2) - 1) / 10f);
 
-        if (newValue == 2) {
-            backgroundImage.sprite = tile2Sprite;
-        }
-        else if (newValue == 4) {
-            backgroundImage.sprite = tile4Sprite;
-        }
+        // Интерполируем между startColor и endColor
+        backgroundImage.color = Color.Lerp(startColor, endColor, t);
     }
 
     /// <summary>
