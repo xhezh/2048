@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2025-03-20_19-03-45" tag="">
+  <assembly name="Game">
+    <class name="AdaptiveFontSize" coveredlines="11" coverablelines="16" totallines="30" coveredbranches="0" totalbranches="0" />
+    <class name="Cell" coveredlines="14" coverablelines="14" totallines="31" coveredbranches="0" totalbranches="0" />
+    <class name="CellView" coveredlines="0" coverablelines="25" totallines="64" coveredbranches="0" totalbranches="0" />
+    <class name="GameField" coveredlines="37" coverablelines="313" totallines="460" coveredbranches="0" totalbranches="0" />
+    <class name="InputManager" coveredlines="1" coverablelines="74" totallines="106" coveredbranches="0" totalbranches="0" />
+  </assembly>
+  <assembly name="Tests">
+    <class name="AdaptiveFontSizeTests" coveredlines="29" coverablelines="30" totallines="68" coveredbranches="0" totalbranches="0" />
+    <class name="CellTests" coveredlines="29" coverablelines="29" totallines="48" coveredbranches="0" totalbranches="0" />
+    <class name="GameFieldTests" coveredlines="37" coverablelines="37" totallines="81" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>

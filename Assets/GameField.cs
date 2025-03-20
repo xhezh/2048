@@ -93,7 +93,7 @@ public class GameField : MonoBehaviour {
     /// Вызывается при вводе, определяет направление движения.
     /// </summary>
     /// <param name="direction">/param>
-    public void MoveCells(Vector2 direction) {
+    public virtual void MoveCells(Vector2 direction) {
         bool moved = false;
         if (direction == Vector2.left) {
             moved = MoveCellsLeft();
@@ -112,6 +112,8 @@ public class GameField : MonoBehaviour {
             CreateCell();
             if (IsGameOver()) {
                 GameOver();
+                CreateCell();
+                CreateCell();
             }
         }
     }
@@ -281,10 +283,15 @@ public class GameField : MonoBehaviour {
     /// </summary>
     private void DestroyCellView(Cell cell) {
         if (cellViews.ContainsKey(cell)) {
+            #if UNITY_EDITOR
+            DestroyImmediate(cellViews[cell].gameObject);
+            #else
             Destroy(cellViews[cell].gameObject);
+            #endif
             cellViews.Remove(cell);
         }
     }
+
 
     #endregion
 
@@ -424,24 +431,21 @@ public class GameField : MonoBehaviour {
 
         currentScore = 0;
         currentScoreText.text = currentScore.ToString();
-
-        CreateCell();
-        CreateCell();
     }
 
     #endregion
 
-    private void OnApplicationQuit() {
+    public void OnApplicationQuit() {
         SaveGame();
     }
 
-    private void OnApplicationPause(bool pause) {
+    public void OnApplicationPause(bool pause) {
         if (pause) {
             SaveGame();
         }
     }
 
-    private void Start() {
+    public virtual void Start() {
         LoadGame();
         CreateEmptyCells();
 

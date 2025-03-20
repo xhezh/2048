@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "generatedon": "2025-03-20T18:32:50Z",
+    "parser": "MultiReportParser (4x OpenCoverParser)",
+    "assemblies": 2,
+    "classes": 11,
+    "files": 11,
+    "coveredlines": 707,
+    "uncoveredlines": 64,
+    "coverablelines": 771,
+    "totallines": 1338,
+    "linecoverage": 91.6,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 84,
+    "totalmethods": 84,
+    "methodcoverage": 100
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "Game", "classes": 6, "coverage": 87.3, "coveredlines": 399, "coverablelines": 457, "totallines": 727, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 44, "totalmethods": 44, "classesinassembly": [
+        { "name": "AdaptiveFontSize", "coverage": 100, "coveredlines": 16, "coverablelines": 16, "totallines": 30, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
+        { "name": "Cell", "coverage": 100, "coveredlines": 14, "coverablelines": 14, "totallines": 31, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
+        { "name": "CellView", "coverage": 100, "coveredlines": 25, "coverablelines": 25, "totallines": 64, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 },
+        { "name": "GameField", "coverage": 86.5, "coveredlines": 271, "coverablelines": 313, "totallines": 464, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 20, "totalmethods": 20 },
+        { "name": "InputManager", "coverage": 79.2, "coveredlines": 61, "coverablelines": 77, "totallines": 113, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
+        { "name": "TestInputManager", "coverage": 100, "coveredlines": 12, "coverablelines": 12, "totallines": 25, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 } ] },
+      { "name": "Tests", "classes": 5, "coverage": 98, "coveredlines": 308, "coverablelines": 314, "totallines": 611, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 40, "totalmethods": 40, "classesinassembly": [
+        { "name": "AdaptiveFontSizeTests", "coverage": 100, "coveredlines": 37, "coverablelines": 37, "totallines": 83, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
+        { "name": "CellTests", "coverage": 100, "coveredlines": 29, "coverablelines": 29, "totallines": 39, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
+        { "name": "CellViewTests", "coverage": 100, "coveredlines": 24, "coverablelines": 24, "totallines": 46, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
+        { "name": "GameFieldTests", "coverage": 98.4, "coveredlines": 189, "coverablelines": 192, "totallines": 387, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 23, "totalmethods": 23 },
+        { "name": "InputManagerTests", "coverage": 90.6, "coveredlines": 29, "coverablelines": 32, "totallines": 56, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 } ] } ]
+  }
+}

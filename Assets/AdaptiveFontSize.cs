@@ -7,7 +7,7 @@ public class AdaptiveFontSize : MonoBehaviour {
     public float minFontSize = 30f;
     public int maxDigits = 6;
 
-    private void Start() {
+    public void Start() {
         if (textMeshPro == null) {
             textMeshPro = GetComponent<TMP_Text>();
         }
